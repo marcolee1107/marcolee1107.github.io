@@ -12,30 +12,30 @@
     
     
     <item>
-      <title>My 3</title>
+      <title>第三篇貼文</title>
       <link>https://marcolee1107.github.io/posts/my-3/</link>
       <pubDate>Fri, 14 Aug 2020 09:05:17 +0800</pubDate>
       
       <guid>https://marcolee1107.github.io/posts/my-3/</guid>
-      <description></description>
+      <description>##第一行 Compound 是 DeFi 上的借貸市場，但它並不是點對點的市場，而是流動性的資金池市場，這種模式讓它更接近於傳統銀行的借貸模式；與此同時，它的運作是基於智能合約來完成的，這讓它具備了更多實時性、不可篡改性以及市場決定利率的特性。本篇源自於 Moresh Kokane 的 Medium 文章《Understanding Compound》，由專欄作者藍狐筆記重新編譯、整理和撰寫。</description>
     </item>
     
     <item>
-      <title>第二頁</title>
+      <title>第二篇貼文</title>
       <link>https://marcolee1107.github.io/posts/the-2/</link>
       <pubDate>Fri, 14 Aug 2020 08:44:14 +0800</pubDate>
       
       <guid>https://marcolee1107.github.io/posts/the-2/</guid>
-      <description>tags: [&amp;ldquo;tags&amp;rdquo;, &amp;ldquo;標籤&amp;rdquo;]</description>
+      <description></description>
     </item>
     
     <item>
-      <title>My First Post</title>
+      <title>第一篇貼文</title>
       <link>https://marcolee1107.github.io/posts/my-first-post/</link>
       <pubDate>Thu, 13 Aug 2020 17:42:04 +0800</pubDate>
       
       <guid>https://marcolee1107.github.io/posts/my-first-post/</guid>
-      <description>在Hugo的第一頁</description>
+      <description>在Hugo的第一篇</description>
     </item>
     
   </channel>

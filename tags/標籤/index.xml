@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>標籤 on 我的新Hugo Site</title>
+    <link>https://marcolee1107.github.io/tags/%E6%A8%99%E7%B1%A4/</link>
+    <description>Recent content in 標籤 on 我的新Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 14 Aug 2020 08:44:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://marcolee1107.github.io/tags/%E6%A8%99%E7%B1%A4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>第二頁</title>
+      <link>https://marcolee1107.github.io/posts/the-2/</link>
+      <pubDate>Fri, 14 Aug 2020 08:44:14 +0800</pubDate>
+      
+      <guid>https://marcolee1107.github.io/posts/the-2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

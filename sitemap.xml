@@ -3,36 +3,137 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marcolee1107.github.io/posts/my-3/</loc>
-    <lastmod>2020-08-14T09:05:17+08:00</lastmod>
+    <loc>https://marcolee1107.github.io/tags/github/</loc>
+    <lastmod>2020-08-15T15:46:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marcolee1107.github.io/posts/</loc>
-    <lastmod>2020-08-14T09:05:17+08:00</lastmod>
+    <loc>https://marcolee1107.github.io/tags/homebrew/</loc>
+    <lastmod>2020-08-15T15:46:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marcolee1107.github.io/</loc>
-    <lastmod>2020-08-14T09:05:17+08:00</lastmod>
+    <loc>https://marcolee1107.github.io/tags/hugo/</loc>
+    <lastmod>2020-08-15T15:46:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marcolee1107.github.io/posts/the-2/</loc>
-    <lastmod>2020-08-14T08:44:14+08:00</lastmod>
+    <loc>https://marcolee1107.github.io/tags/hugo-themes/</loc>
+    <lastmod>2020-08-15T15:46:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marcolee1107.github.io/posts/my-first-post/</loc>
-    <lastmod>2020-08-13T17:42:04+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcolee1107.github.io/categories/</loc>
+    <loc>https://marcolee1107.github.io/post/</loc>
+    <lastmod>2020-08-15T15:46:23+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://marcolee1107.github.io/tags/</loc>
+    <lastmod>2020-08-15T15:46:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/post/deployed-hugo/</loc>
+    <lastmod>2020-08-15T15:46:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/categories/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/tags/css/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/tags/html/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/tags/markdown/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/post/markdown-syntax/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/categories/syntax/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/tags/themes/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/categories/themes/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/tags/privacy/</loc>
+    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/post/rich-content/</loc>
+    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/tags/shortcodes/</loc>
+    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/post/placeholder-text/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/tags/text/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/post/math-typesetting/</loc>
+    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/tags/emoji/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/post/emoji-support/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcolee1107.github.io/tags/index/</loc>
   </url>
   
 </urlset>

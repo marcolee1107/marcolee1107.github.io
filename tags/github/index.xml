@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Website of Marco Lee</title>
+    <link>https://marcolee1107.github.io/tags/github/</link>
+    <description>Recent content in GitHub on Website of Marco Lee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 15 Aug 2020 15:46:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://marcolee1107.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我把 Hugo 部落格部署在 GitHub 上</title>
+      <link>https://marcolee1107.github.io/post/deployed-hugo/</link>
+      <pubDate>Sat, 15 Aug 2020 15:46:23 +0800</pubDate>
+      
+      <guid>https://marcolee1107.github.io/post/deployed-hugo/</guid>
+      <description>我想要重新開張個人部落格，選擇了 Hugo。最大的原因是它可以直接架在 GitHub 上，而且輕盈簡潔，號稱 &amp;quot;The world’s fastest framework for building websites&amp;quot;。不像 Wordpress，還得為它找一個虛擬主機；儘管我比較熟悉 Wordpress，還是決定試試 Hugo。其背後隠藏的原因是&amp;hellip; GitHub 和 Hugo 都免費。哈哈。</description>
+    </item>
+    
+  </channel>
+</rss>
