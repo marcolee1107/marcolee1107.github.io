@@ -182,22 +182,22 @@ theme = &quot;anatole&quot;
 <p><img src="/images/site-feature-image.png" alt="screenshot" title="anatole"></p>
 <h3 id="二發佈-hugo-到-github">二、發佈 Hugo 到 GitHub</h3>
 <h4 id="1-在-github-建立兩個-repository">1. 在 GitHub 建立兩個 repository</h4>
-<p>在 GitHub 建立 website-hugo 和 your-account.github.io 兩個 repository。</p>
+<p>在 GitHub 建立 your-account.github.io 和 website-hugo 兩個 repository。</p>
 <h4 id="2-建立-public-資料夾">2. 建立 public 資料夾</h4>
 <p>我們在本地端建立的頁面，測試完畢後，需要打包到 public 資料夾，然後發佈到 GitHub。打包的方法便是下達 hugo 指令，如下：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo
 </code></pre></div><h4 id="3-將-hugo-發佈到-github-上">3. 將 Hugo 發佈到 GitHub 上</h4>
-<p>將 public 資料夾發佈到 GitHub 上的 your-account.github.io。需要切換到 public 資料夾。按下列指令執行。</p>
+<p>將 public 資料夾發佈到 GitHub 上的 your-account.github.io。需要切換到 public 資料夾。按下列指令執行：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cd public
 $ git init
-$ git remote add origin https://github.com/marcolee1107/marcolee1107.github.io.git
+$ git remote add origin https://github.com/your-account/your-account.github.io.git
 $ git add .
 $ git commit -m <span style="color:#e6db74">&#34;push public&#34;</span>
 $ git push -u origin master
-</code></pre></div><p>回到根目錄，把整個根目錄發佈到 GitHub。按下列指令執行。</p>
+</code></pre></div><p>回到根目錄，把整個根目錄發佈到 GitHub 上的 website-hugo。按下列指令執行：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cd ..
 $ git init
-$ git remote add origin https://github.com/marcolee1107/website-hugo.git
+$ git remote add origin https://github.com/your-account/website-hugo.git
 $ git add .
 $ git commit -m <span style="color:#e6db74">&#34;Initial commit&#34;</span>
 $ git push -u origin master
