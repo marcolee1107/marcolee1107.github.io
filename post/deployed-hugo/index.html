@@ -2,7 +2,7 @@
 <html lang="tw" data-theme=""><head>
     <title> Marco Lee | 我把 Hugo 部落格部署在 GitHub 上 </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.69.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Call me Marco">
+    <meta name="description" content="記錄一種業餘和隨性的興緻，也像是一項一項的挑戰">
     
     <link rel="stylesheet" href="https://marcolee1107.github.io/css/style.min.ef1c26beeb41dc113b0b2c514197bdbb73a61c7f832ddaeb309ba7e151912707.css" integrity="sha256-7xwmvutB3BE7CyxRQZe9u3OmHH&#43;DLdrrMJun4VGRJwc=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
@@ -26,7 +26,7 @@
         <img src="https://marcolee1107.github.io/images/profile.jpg" alt="profile picture">
         <h3 title=""><a href="/">I&#39;m Marco Lee</a></h3>
         <div class="description">
-          <p>Call me Marco</p>
+          <p>記錄一種業餘和隨性的興緻，也像是一項一項的挑戰</p>
         </div>
       </div>
     </div>
@@ -121,10 +121,10 @@
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ brew install hugo
 </code></pre></div><h4 id="3-建立新網站">3. 建立新網站</h4>
 <p>下達指令建立新網站，並指定網站名稱。與網站同名的資料夾為部落格網站的根目錄。切換到資料夾內，等待下一步的處理步驟。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo new site marcolee1107
-$ cd marcolee1107
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo new site website-hugo
+$ cd website-hugo
 </code></pre></div><blockquote>
-<p>我的新網站名稱採用和 GitHub 帳戶相同的名稱。你不一定得這麼做，可以替換成任意名稱。進入同名的新資料夾，觀察一下內部資料夾結構。</p>
+<p>我的新網站名稱採用和 GitHub 帳戶相同的名稱。你不一定得這麼做，可以替換成任意名稱。進入新網站同名的新資料夾，觀察一下內部資料夾結構。</p>
 </blockquote>
 <p>現在的資料夾結構應如下所示：</p>
 <pre><code>.
@@ -143,7 +143,7 @@ $ cd marcolee1107
 <pre><code>theme = &quot;hyde&quot;
 </code></pre><p>再將 /themes/hyde 中的 static 和 layouts 資料夾複製到根目錄，取代原來的 static 和 layouts 資料夾。</p>
 <blockquote>
-<p>在本文最後，我會再記錄如何更換另一個佈景主題，也就是更換為目前使用的佈景主題。</p>
+<p>稍後，我會再記錄如何更換另一個佈景主題，也就是更換為目前使用的佈景主題。</p>
 </blockquote>
 <h5 id="hyde-佈景主題外觀如下圖片連結自-httpsthemesgohugoiohyde此頁面有詳細的介紹及使用說明">Hyde 佈景主題外觀如下。圖片連結自 <a href="https://themes.gohugo.io/hyde/">https://themes.gohugo.io/hyde/</a>。此頁面有詳細的介紹及使用說明。</h5>
 <p><img src="https://f.cloud.github.com/assets/98681/1831229/42b0b354-7384-11e3-8462-31b8df193fe5.png" alt="Themes" title="Hugo Themes,Hyde"></p>
@@ -162,7 +162,10 @@ title: &quot;My First Post&quot;
 date: 2020-08-15T15:46:23+08:00
 draft: false
 ---
-</code></pre><h4 id="7-進行本地端測試">7. 進行本地端測試</h4>
+</code></pre><blockquote>
+<p>Hugo 頁面使用 <!-- raw HTML omitted -->Markdown<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><!-- raw HTML omitted --> 語言編輯，我需要再花點時間了解其語法，並找尋適當的編輯工具，以編輯出好看好讀的頁面。我目前暫時使用 Visual Studio Code。</p>
+</blockquote>
+<h4 id="7-進行本地端測試">7. 進行本地端測試</h4>
 <p>啟動 Hugo 伺服器，指令如下。針對到此的成果進行本地端測試。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo server -D
 </code></pre></div><p>伺服器啟動後，在瀏覽器中輸入網址 http://localhost:1313，網站便呈現在眼前。</p>
@@ -170,7 +173,7 @@ draft: false
 <p>到目前為止，我們已經可以在本地端測試 Hugo 部落格。在本地端伺服器啟動的狀態下，我們修改文章頁面，或新增文章頁面，都會即時更新狀態。</p>
 </blockquote>
 <h4 id="8-更換佈景主題">8. 更換佈景主題</h4>
-<p>佈景主題存放在 themes 資料夾內。可以分別存放多個佈景主題。目前本網站使用的佈景主題是 anatole，可以下達下列指令將佈景主題複製下來。</p>
+<p>佈景主題存放在 themes 資料夾內。可以分別存放多個佈景主題。目前本網站使用的佈景主題是 <!-- raw HTML omitted -->anatole<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><!-- raw HTML omitted -->，可以執行下列指令將佈景主題複製下來。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git clone https://github.com/lxndrblz/anatole.git themes/anatole
 </code></pre></div><p>接下來需要調整 config.toml 檔案，通用的設定如下列四項。最好的方法是複製 themes/anatole/exampleSite 資料夾內的 config.toml 來修改。詳細的調整方法請參考 <a href="https://themes.gohugo.io/anatole/">Anatole</a> 頁面內的說明。</p>
 <pre><code>baseURL = &quot;https://your-account.github.io/&quot;    # 更改 GitHub 帳號名稱
@@ -179,7 +182,7 @@ title = &quot;Blog of someone&quot;
 theme = &quot;anatole&quot; 
 </code></pre><p>接下來將 themes/anatole/exampleSite 資料夾內的 content 和 static 兩個資料夾，複製到根目錄覆蓋原有的同名資料夾。</p>
 <p>最後啟動 Hugo 伺服器進行本地端測試。</p>
-<p><img src="/images/site-feature-image.png" alt="screenshot" title="anatole"></p>
+<p><img src="/images/tn.png" alt="screenshot" title="anatole"></p>
 <h3 id="二發佈-hugo-到-github">二、發佈 Hugo 到 GitHub</h3>
 <h4 id="1-在-github-建立兩個-repository">1. 在 GitHub 建立兩個 repository</h4>
 <p>在 GitHub 建立 your-account.github.io 和 website-hugo 兩個 repository。</p>
@@ -209,10 +212,16 @@ $ git push -u origin master
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>Homebrew 官方網站網址如右：<a href="https://brew.sh/">https://brew.sh/</a>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Homebrew 官方網站網址如右：<a href="https://brew.sh/">https://brew.sh/</a>。 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>Hugo 官方網站網址如右：<a href="https://gohugo.io/">https://gohugo.io/</a>. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Hugo 官方網站網址如右：<a href="https://gohugo.io/">https://gohugo.io/</a>。 <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Markdown 官方網站網址如右：<a href="https://daringfireball.net/projects/markdown/">https://daringfireball.net/projects/markdown/</a>。另一個 Markdown Guide 網站也提供了不少實用的資訊 <a href="https://www.markdownguide.org/">https://www.markdownguide.org/</a>。 <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>anatole 頁面網址如右：<a href="https://themes.gohugo.io/anatole/">https://themes.gohugo.io/anatole/</a>。 <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
