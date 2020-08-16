@@ -1,41 +1,69 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 我的新Hugo Site</title>
+    <title>Posts on Website of Marco Lee</title>
     <link>https://marcolee1107.github.io/posts/</link>
-    <description>Recent content in Posts on 我的新Hugo Site</description>
+    <description>Recent content in Posts on Website of Marco Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 14 Aug 2020 09:05:17 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 15:46:23 +0800</lastBuildDate>
     
 	<atom:link href="https://marcolee1107.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>第三篇貼文</title>
-      <link>https://marcolee1107.github.io/posts/my-3/</link>
-      <pubDate>Fri, 14 Aug 2020 09:05:17 +0800</pubDate>
+      <title>我把 Hugo 部落格部署在 GitHub 上</title>
+      <link>https://marcolee1107.github.io/posts/deployed-hugo/</link>
+      <pubDate>Sat, 15 Aug 2020 15:46:23 +0800</pubDate>
       
-      <guid>https://marcolee1107.github.io/posts/my-3/</guid>
-      <description>##第一行 Compound 是 DeFi 上的借貸市場，但它並不是點對點的市場，而是流動性的資金池市場，這種模式讓它更接近於傳統銀行的借貸模式；與此同時，它的運作是基於智能合約來完成的，這讓它具備了更多實時性、不可篡改性以及市場決定利率的特性。本篇源自於 Moresh Kokane 的 Medium 文章《Understanding Compound》，由專欄作者藍狐筆記重新編譯、整理和撰寫。</description>
+      <guid>https://marcolee1107.github.io/posts/deployed-hugo/</guid>
+      <description>我想要重新開張個人部落格，選擇了 Hugo。最大的原因是它可以直接架在 GitHub 上，而且輕盈簡潔，號稱 &amp;quot;The world’s fastest framework for building websites&amp;quot;。不像 Wordpress，還得為它找一個虛擬主機；儘管我比較熟悉 Wordpress，還是決定試試 Hugo。其背後隠藏的原因是&amp;hellip; GitHub 和 Hugo 都免費。哈哈。</description>
     </item>
     
     <item>
-      <title>第二篇貼文</title>
-      <link>https://marcolee1107.github.io/posts/the-2/</link>
-      <pubDate>Fri, 14 Aug 2020 08:44:14 +0800</pubDate>
+      <title>Markdown Syntax Guide</title>
+      <link>https://marcolee1107.github.io/posts/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://marcolee1107.github.io/posts/the-2/</guid>
-      <description></description>
+      <guid>https://marcolee1107.github.io/posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>第一篇貼文</title>
-      <link>https://marcolee1107.github.io/posts/my-first-post/</link>
-      <pubDate>Thu, 13 Aug 2020 17:42:04 +0800</pubDate>
+      <title>Rich Content</title>
+      <link>https://marcolee1107.github.io/posts/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://marcolee1107.github.io/posts/my-first-post/</guid>
-      <description>在Hugo的第一篇</description>
+      <guid>https://marcolee1107.github.io/posts/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://marcolee1107.github.io/posts/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcolee1107.github.io/posts/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
+pectora summo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://marcolee1107.github.io/posts/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcolee1107.github.io/posts/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>https://marcolee1107.github.io/posts/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcolee1107.github.io/posts/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
   </channel>

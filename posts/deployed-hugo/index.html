@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="tw" data-theme=""><head>
+    <title> Marco Lee | 我把 Hugo 部落格部署在 GitHub 上 </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.69.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="記錄一種業餘和隨性的興緻，也像是一項項的挑戰">
+    
+    <link rel="stylesheet" href="https://marcolee1107.github.io/css/style.min.ef1c26beeb41dc113b0b2c514197bdbb73a61c7f832ddaeb309ba7e151912707.css" integrity="sha256-7xwmvutB3BE7CyxRQZe9u3OmHH&#43;DLdrrMJun4VGRJwc=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="https://marcolee1107.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://marcolee1107.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://marcolee1107.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://marcolee1107.github.io/favicons/favicon-16x16.png">
+    <link rel="canonical" href="https://marcolee1107.github.io/posts/deployed-hugo/">
+    
+    
+    <script type="text/javascript" src="https://marcolee1107.github.io/js/anatole-header.min.7e2fc0724240b28c6e214687e73a4a6eb6c196bbace546b9dc86e94cca120b5c.js" integrity="sha256-fi/AckJAsoxuIUaH5zpKbrbBlrus5Ua53IbpTMoSC1w=" crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://marcolee1107.github.io/images/site-feature.png"/>
+
+<meta name="twitter:title" content="我把 Hugo 部落格部署在 GitHub 上"/>
+<meta name="twitter:description" content="記錄在 GitHub 部署 Hugo 的過程"/>
+
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://marcolee1107.github.io/images/profile.jpg" alt="profile picture">
+        <h3 title=""><a href="/">I&#39;m Marco Lee</a></h3>
+        <div class="description">
+          <p>記錄一種業餘和隨性的興緻，也像是一項項的挑戰</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+        <li>
+        <a href="https://de.linkedin.com/" rel="me" aria-label="Linkedin">
+          <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://github.com/marcolee1107/" rel="me" aria-label="GitHub">
+          <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+          <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="mailto:marcolinking@gmail.com" rel="me" aria-label="e-mail">
+          <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Marco Lee 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    <ul class="nav" id="navMenu">
+        
+        
+        
+        <li><a  href="/" title="">Home</a></li>
+        
+        
+        <li><a  href="/posts/" title="">Posts</a></li>
+        
+        
+        <li><a  href="/about/" title="">About</a></li>
+        
+        
+        <li class="theme-switch-item">
+        <a class="theme-switch" title="Switch Theme">
+            <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+        </li>
+    </ul>
+</div>
+
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>我把 Hugo 部落格部署在 GitHub 上
+        </h3>
+        
+        </div>
+
+    <p>我想要重新開張個人部落格，選擇了 Hugo。最大的原因是它可以直接架在 GitHub 上，而且輕盈簡潔，號稱 <code>&quot;The world’s fastest framework for building websites&quot;</code>。不像 Wordpress，還得為它找一個虛擬主機；儘管我比較熟悉 Wordpress，還是決定試試 Hugo。其背後隠藏的原因是&hellip; GitHub 和 Hugo 都免費。哈哈。</p>
+<p>我使用 MacOS。部署 Hugo 到 GitHub 分為兩個部份，我處理的過程如下：</p>
+<h3 id="一本地建立檔案">一、本地建立檔案</h3>
+<h4 id="1-安裝-homebrew">1. 安裝 Homebrew。</h4>
+<p>打開<strong>終端機</strong>，將下一行命令複製貼到<strong>終端機</strong>執行<!-- raw HTML omitted -->安裝<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted -->。</p>
+<pre><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
+</code></pre><h4 id="2-安裝-hugo">2. 安裝 Hugo</h4>
+<p>直接下達指令安裝 Hugo。Hugo 有完整詳細的說明文件，有時間再來仔細<!-- raw HTML omitted -->瞧瞧<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><!-- raw HTML omitted -->。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ brew install hugo
+</code></pre></div><h4 id="3-建立新網站">3. 建立新網站</h4>
+<p>下達指令建立新網站，並指定網站名稱。與網站同名的資料夾為部落格網站的根目錄。切換到資料夾內，等待下一步的處理步驟。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo new site website-hugo
+$ cd website-hugo
+</code></pre></div><blockquote>
+<p>這裡可以使用任何網站名稱。我的新網站名稱採用和 GitHub 帳戶相同的名稱，你不一定得這麼做，因為可能會產生混淆，建議你用上述的 website-hugo 名稱就好。重點是進入新網站同名的新資料夾，觀察一下內部資料夾結構。</p>
+</blockquote>
+<p>現在的資料夾結構應如下所示：</p>
+<pre><code>.
+├── archetypes
+├── content
+├── data
+├── layouts
+├── static
+├── themes
+└. config.toml
+</code></pre><h4 id="4-選擇並套用佈景主題">4. 選擇並套用佈景主題</h4>
+<p>在網站根目錄複製中意的佈景主題到下一層 themes 資料夾內。在官方的 <a href="https://themes.gohugo.io/">Hugo Themes</a> 網頁上有很多佈景主題可供挑選。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git clone https://github.com/spf13/hyde.git themes/hyde
+</code></pre></div><p>我們可以下載多個佈景主題，在 Hugo Themes 網頁進入到中選的佈景主題頁面，可找找到相關的說明。比照上述指令將佈景主題的 repository 複製到 <em>themes/佈景主題名稱</em> 資料夾中。</p>
+<p>接下來，在 config.toml 檔案中，將 hyde 指定為預設的佈景主題，加入的指令如下：</p>
+<pre><code>theme = &quot;hyde&quot;
+</code></pre><p>再將 /themes/hyde 中的 static 和 layouts 資料夾複製到根目錄，取代原來的 static 和 layouts 資料夾。</p>
+<blockquote>
+<p>稍後，我會再記錄如何更換另一個佈景主題，也就是更換為目前使用的佈景主題。</p>
+</blockquote>
+<h5 id="hyde-佈景主題外觀如下圖片連結自-httpsthemesgohugoiohyde此頁面有詳細的介紹及使用說明">Hyde 佈景主題外觀如下。圖片連結自 <a href="https://themes.gohugo.io/hyde/">https://themes.gohugo.io/hyde/</a>。此頁面有詳細的介紹及使用說明。</h5>
+<p><img src="https://f.cloud.github.com/assets/98681/1831229/42b0b354-7384-11e3-8462-31b8df193fe5.png" alt="Themes" title="Hugo Themes,Hyde"></p>
+<h4 id="5-編輯-configtoml">5. 編輯 config.toml</h4>
+<p>使用編輯器開啟根目錄中的 config.toml；我使用 Visual Studio Code，調整內容大致如下：</p>
+<pre><code>baseURL = &quot;https://your-account.github.io/&quot;    # 更改 GitHub 帳號名稱
+languageCode = &quot;zh-tw&quot;                         # 設定使用繁體中文
+title = &quot;Blog of someone&quot;
+theme = &quot;hyde&quot; 
+</code></pre><h4 id="6-建立新文章頁面">6. 建立新文章頁面</h4>
+<p>上述步驟已經完成了 Hugo 的架設。若要建立新文章頁面，必須使用 hugo new 指令，如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo new posts/my-first-post.md
+</code></pre></div><p>此指令會在 /content/posts 資料夾中建立 my-first-post.md 頁面。使用編輯器打開此頁面，將 draft 的參數由 true 改成 false，如下；或者把這一行刪除。</p>
+<pre><code>---
+title: &quot;My First Post&quot;
+date: 2020-08-15T15:46:23+08:00
+draft: false
+---
+</code></pre><blockquote>
+<p>Hugo 頁面使用 <!-- raw HTML omitted -->Markdown<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><!-- raw HTML omitted --> 語言編輯，我需要再花點時間了解其語法，並找尋適當的編輯工具，以編輯出好看好讀的頁面。我目前暫時使用 Visual Studio Code。</p>
+</blockquote>
+<h4 id="7-進行本地端測試">7. 進行本地端測試</h4>
+<p>啟動 Hugo 伺服器，指令如下。針對到此的成果進行本地端測試。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo server -D
+</code></pre></div><p>伺服器啟動後，在瀏覽器中輸入網址 http://localhost:1313，網站便呈現在眼前。</p>
+<blockquote>
+<p>到目前為止，我們已經可以在本地端測試 Hugo 部落格。在本地端伺服器啟動的狀態下，我們修改文章頁面，或新增文章頁面，都會即時更新狀態。</p>
+</blockquote>
+<h4 id="8-更換佈景主題">8. 更換佈景主題</h4>
+<p>佈景主題存放在 themes 資料夾內。可以分別存放多個佈景主題。目前本網站使用的佈景主題是 <!-- raw HTML omitted -->anatole<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><!-- raw HTML omitted -->，可以執行下列指令將佈景主題複製下來。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git clone https://github.com/lxndrblz/anatole.git themes/anatole
+</code></pre></div><p>接下來需要調整 config.toml 檔案，通用的設定如下列四項。最好的方法是複製 themes/anatole/exampleSite 資料夾內的 config.toml 來修改。詳細的調整方法請參考 <a href="https://themes.gohugo.io/anatole/">Anatole</a> 頁面內的說明。</p>
+<pre><code>baseURL = &quot;https://your-account.github.io/&quot;    # 更改 GitHub 帳號名稱
+languageCode = &quot;zh-tw&quot;                         # 設定使用繁體中文
+title = &quot;Blog of someone&quot;
+theme = &quot;anatole&quot; 
+</code></pre><p>接下來將 themes/anatole/exampleSite 資料夾內的 content 和 static 兩個資料夾，複製到根目錄覆蓋原有的同名資料夾。</p>
+<p>最後啟動 Hugo 伺服器進行本地端測試。</p>
+<p><img src="/images/tn.png" alt="screenshot" title="anatole"></p>
+<h3 id="二發佈-hugo-到-github">二、發佈 Hugo 到 GitHub</h3>
+<h4 id="1-在-github-建立兩個-repository">1. 在 GitHub 建立兩個 repository</h4>
+<p>在 GitHub 建立 your-account.github.io 和 website-hugo 兩個 repository。</p>
+<h4 id="2-建立-public-資料夾">2. 建立 public 資料夾</h4>
+<p>我們在本地端建立的頁面，測試完畢後，需要打包到 public 資料夾，然後發佈到 GitHub。打包的方法便是下達 hugo 指令，如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo
+</code></pre></div><h4 id="3-將-hugo-發佈到-github-上">3. 將 Hugo 發佈到 GitHub 上</h4>
+<p>將 public 資料夾發佈到 GitHub 上的 your-account.github.io。需要切換到 public 資料夾。按下列指令執行：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cd public
+$ git init
+$ git remote add origin https://github.com/your-account/your-account.github.io.git
+$ git add .
+$ git commit -m <span style="color:#e6db74">&#34;push public&#34;</span>
+$ git push -u origin master
+</code></pre></div><p>回到根目錄，把整個根目錄發佈到 GitHub 上的 website-hugo。按下列指令執行：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cd ..
+$ git init
+$ git remote add origin https://github.com/your-account/website-hugo.git
+$ git add .
+$ git commit -m <span style="color:#e6db74">&#34;Initial commit&#34;</span>
+$ git push -u origin master
+</code></pre></div><h4 id="4-打開瀏覽器輸入網址-httpsyour-accountgithubio">4. 打開瀏覽器輸入網址 <a href="https://your-account.github.io">https://your-account.github.io</a></h4>
+<blockquote>
+<p>大功告成</p>
+</blockquote>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Homebrew 官方網站網址如右：<a href="https://brew.sh/">https://brew.sh/</a>。 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Hugo 官方網站網址如右：<a href="https://gohugo.io/">https://gohugo.io/</a>。 <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Markdown 官方網站網址如右：<a href="https://daringfireball.net/projects/markdown/">https://daringfireball.net/projects/markdown/</a>。另一個 Markdown Guide 網站也提供了不少實用的資訊 <a href="https://www.markdownguide.org/">https://www.markdownguide.org/</a>。 <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>anatole 頁面網址如右：<a href="https://themes.gohugo.io/anatole/">https://themes.gohugo.io/anatole/</a>。 <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
+    <span class="separator"><a class="tag" href="/tags/hugo/">Hugo</a><a class="tag" href="/tags/hugo-themes/">Hugo Themes</a><a class="tag" href="/tags/homebrew/">Homebrew</a><a class="tag" href="/tags/github/">GitHub</a></span>
+
+      </div>
+    </div>
+
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+<script type="text/javascript" src="https://marcolee1107.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js" integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw=" crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript" src="https://marcolee1107.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js" integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://marcolee1107.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js" integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro=" crossorigin="anonymous"></script></html></body>
+
+</html>
