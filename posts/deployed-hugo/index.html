@@ -176,31 +176,37 @@ title = &quot;Blog of someone&quot;
 theme = &quot;anatole&quot; 
 </code></pre><p>接下來將 themes/anatole/exampleSite 資料夾內的 content 和 static 兩個資料夾，複製到根目錄覆蓋原有的同名資料夾。</p>
 <p>最後啟動 Hugo 伺服器進行本地端測試。</p>
-<p><img src="/images/tn.png" alt="screenshot" title="anatole"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo server -D
+</code></pre></div><p><img src="/images/tn.png" alt="screenshot" title="anatole"></p>
 <h3 id="二發佈-hugo-到-github">二、發佈 Hugo 到 GitHub</h3>
-<h4 id="1-在-github-建立兩個-repository">1. 在 GitHub 建立兩個 repository</h4>
-<p>在 GitHub 建立 your-account.github.io 和 website-hugo 兩個 repository。</p>
+<p>由於 GitHub 提供 <!-- raw HTML omitted -->GitHub Pages<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup><!-- raw HTML omitted --> 服務，因此可以讓註冊使用者在 GitHub 架設網站。</p>
+<h4 id="1-在-github-建立儲存庫repository">1. 在 GitHub 建立儲存庫（repository）</h4>
+<p>在 GitHub 建立你的 your-account.github.io 儲存庫（repository）。</p>
 <h4 id="2-建立-public-資料夾">2. 建立 public 資料夾</h4>
-<p>我們在本地端建立的頁面，測試完畢後，需要打包到 public 資料夾，然後發佈到 GitHub。打包的方法便是下達 hugo 指令，如下：</p>
+<p>我們在本地端建立的頁面，測試完畢後，需要打包到 public 資料夾，然後發佈到 GitHub。打包的方法便是下達 hugo 指令，讓 Hugo 自動建立 public 資料夾並打包網站，如下：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo
 </code></pre></div><h4 id="3-將-hugo-發佈到-github-上">3. 將 Hugo 發佈到 GitHub 上</h4>
-<p>將 public 資料夾發佈到 GitHub 上的 your-account.github.io。需要切換到 public 資料夾。按下列指令執行：</p>
+<p>此步驗是將 public 資料夾的內容發佈到 GitHub 上的 your-account.github.io 儲存庫。在操作之前對 git 指令做些註解：</p>
+<ul>
+<li><strong><code>git clone &lt;網址&gt;</code></strong>。下載遠端儲存庫；如下載佈景主題儲存庫。</li>
+<li><strong><code>git init</code></strong>。新建本地儲存庫。</li>
+<li><strong><code>git remote add &lt;遠端儲存庫簡稱&gt; &lt;網址&gt;</code></strong>。加入遠端儲存庫。</li>
+<li><strong><code>git add .</code></strong>。加入索引。</li>
+<li><strong><code>git commit -m &quot;版本標註&quot;</code></strong>。提交版本。</li>
+<li><strong><code>git push &lt;儲存庫簡稱&gt; &lt;分支名稱&gt;</code></strong>。更新遠端儲存庫資料。</li>
+</ul>
+<p>操作時注意資料夾的切換。進入 public 資料夾，執行建立本地儲存庫：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cd public
 $ git init
-$ git remote add origin https://github.com/your-account/your-account.github.io.git
-$ git add .
+</code></pre></div><p>加入一個名為 origin 的遠端儲存庫，網址接在後面。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git remote add origin https://github.com/your-account/your-account.github.io.git
+</code></pre></div><p>加入索引、提交版本，並更新遠端儲存庫。往後本地資料有任何更新，透過底下指令來 push 資料即可。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git add .
 $ git commit -m <span style="color:#e6db74">&#34;push public&#34;</span>
-$ git push -u origin master
-</code></pre></div><p>回到根目錄，把整個根目錄發佈到 GitHub 上的 website-hugo。按下列指令執行：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cd ..
-$ git init
-$ git remote add origin https://github.com/your-account/website-hugo.git
-$ git add .
-$ git commit -m <span style="color:#e6db74">&#34;Initial commit&#34;</span>
 $ git push -u origin master
 </code></pre></div><h4 id="4-打開瀏覽器輸入網址-httpsyour-accountgithubio">4. 打開瀏覽器輸入網址 <a href="https://your-account.github.io">https://your-account.github.io</a></h4>
 <blockquote>
-<p>大功告成</p>
+<p>大功告成。底下為參考文件。</p>
 </blockquote>
 <section class="footnotes" role="doc-endnotes">
 <hr>
@@ -216,6 +222,9 @@ $ git push -u origin master
 </li>
 <li id="fn:4" role="doc-endnote">
 <p>anatole 頁面網址如右：<a href="https://themes.gohugo.io/anatole/">https://themes.gohugo.io/anatole/</a>。 <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>GitHub Pages 官方介紹網址如右：<a href="https://pages.github.com/">https://pages.github.com/</a>。 <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
