@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="tw" data-theme=""><head>
-    <title> Marco Lee | 我把 Hugo 部落格部署在 GitHub 上 </title>
+    <title> Marco Lee | 我把 Hugo 部署在 GitHub 上當作部落格網站 </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.69.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="記錄一種業餘和隨性的興緻，也像是一項項的挑戰">
     
-    <link rel="stylesheet" href="https://marcolee1107.github.io/css/style.min.ef1c26beeb41dc113b0b2c514197bdbb73a61c7f832ddaeb309ba7e151912707.css" integrity="sha256-7xwmvutB3BE7CyxRQZe9u3OmHH&#43;DLdrrMJun4VGRJwc=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://marcolee1107.github.io/css/style.min.81d388e8ead0253555665d6f2ee28c0418753bada8054c0cfb724c4b5ead2319.css" integrity="sha256-gdOI6OrQJTVVZl1vLuKMBBh1O62oBUwM&#43;3JMS16tIxk=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
     <link rel="shortcut icon" href="https://marcolee1107.github.io/favicons/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="https://marcolee1107.github.io/favicons/apple-touch-icon.png">
@@ -17,8 +17,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://marcolee1107.github.io/images/site-feature.png"/>
 
-<meta name="twitter:title" content="我把 Hugo 部落格部署在 GitHub 上"/>
-<meta name="twitter:description" content="記錄在 GitHub 部署 Hugo 的過程"/>
+<meta name="twitter:title" content="我把 Hugo 部署在 GitHub 上當作部落格網站"/>
+<meta name="twitter:description" content="記錄將 Hugo 部署在 GitHub 的過程，並學習如何編輯 Markdown 文件"/>
 
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
@@ -99,15 +99,15 @@
     <div class="post-content">
 
       <div class="post-title">
-        <h3>我把 Hugo 部落格部署在 GitHub 上
+        <h3>我把 Hugo 部署在 GitHub 上當作部落格網站
         </h3>
         
         </div>
 
-    <p>我想要重新開張個人部落格，選擇了 Hugo。最大的原因是它可以直接架在 GitHub 上，而且輕盈簡潔，號稱 <code>&quot;The world’s fastest framework for building websites&quot;</code>。不像 Wordpress，還得為它找一個虛擬主機；儘管我比較熟悉 Wordpress，還是決定試試 Hugo。其背後隠藏的原因是&hellip; GitHub 和 Hugo 都免費。哈哈。</p>
+    <p>我想要重新開張個人部落格，選擇了 Hugo。最大的原因是它可以直接架在 GitHub 上，而且輕盈簡潔，號稱 <code>&quot;The world’s fastest framework for building websites&quot;</code>。不像 Wordpress，還得為它找一個虛擬主機；儘管我使用多年並比較熟悉 Wordpress，還是決定試試 Hugo。其背後隠藏的原因是&hellip; 我是 GitHub 使用者，GitHub Pages 和 Hugo 都免費。哈哈。</p>
 <p>我使用 MacOS。部署 Hugo 到 GitHub 分為兩個部份，我處理的過程如下：</p>
 <h3 id="一本地建立檔案">一、本地建立檔案</h3>
-<h4 id="1-安裝-homebrew">1. 安裝 Homebrew。</h4>
+<h4 id="1-安裝-homebrew">1. 安裝 Homebrew</h4>
 <p>打開<strong>終端機</strong>，將下一行命令複製貼到<strong>終端機</strong>執行<!-- raw HTML omitted -->安裝<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted -->。</p>
 <pre><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
 </code></pre><h4 id="2-安裝-hugo">2. 安裝 Hugo</h4>
@@ -183,10 +183,10 @@ theme = &quot;anatole&quot;
 <h4 id="1-在-github-建立儲存庫repository">1. 在 GitHub 建立儲存庫（repository）</h4>
 <p>在 GitHub 建立你的 your-account.github.io 儲存庫（repository）。</p>
 <h4 id="2-建立-public-資料夾">2. 建立 public 資料夾</h4>
-<p>我們在本地端建立的頁面，測試完畢後，需要打包到 public 資料夾，然後發佈到 GitHub。打包的方法便是下達 hugo 指令，讓 Hugo 自動建立 public 資料夾並打包網站，如下：</p>
+<p>我們在本地端建立的頁面，測試完畢後，需要打包到 public 資料夾，然後發佈到 GitHub。打包的方法便是下達 hugo 指令，讓 Hugo 自動建立 public 資料夾並儲存打包的網站，如下：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo
 </code></pre></div><h4 id="3-將-hugo-發佈到-github-上">3. 將 Hugo 發佈到 GitHub 上</h4>
-<p>此步驗是將 public 資料夾的內容發佈到 GitHub 上的 your-account.github.io 儲存庫。在操作之前對 git 指令做些註解：</p>
+<p>此步驟是將 public 資料夾的內容發佈到 GitHub 上的 your-account.github.io 儲存庫。在操作之前先複習 git 指令：</p>
 <ul>
 <li><strong><code>git clone &lt;網址&gt;</code></strong>。下載遠端儲存庫；如下載佈景主題儲存庫。</li>
 <li><strong><code>git init</code></strong>。新建本地儲存庫。</li>
@@ -200,11 +200,11 @@ theme = &quot;anatole&quot;
 $ git init
 </code></pre></div><p>加入一個名為 origin 的遠端儲存庫，網址接在後面。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git remote add origin https://github.com/your-account/your-account.github.io.git
-</code></pre></div><p>加入索引、提交版本，並更新遠端儲存庫。往後本地資料有任何更新，透過底下指令來 push 資料即可。</p>
+</code></pre></div><p>加入索引、提交版本，並更新遠端儲存庫。往後本地端資料有任何更新，透過底下指令來 push 資料即可。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git add .
 $ git commit -m <span style="color:#e6db74">&#34;push public&#34;</span>
 $ git push -u origin master
-</code></pre></div><h4 id="4-打開瀏覽器輸入網址-httpsyour-accountgithubio">4. 打開瀏覽器輸入網址 <a href="https://your-account.github.io">https://your-account.github.io</a></h4>
+</code></pre></div><h3 id="4-打開瀏覽器輸入網址-httpsyour-accountgithubio">4. 打開瀏覽器輸入網址 <a href="https://your-account.github.io">https://your-account.github.io</a></h3>
 <blockquote>
 <p>大功告成。底下為參考文件。</p>
 </blockquote>
@@ -234,7 +234,7 @@ $ git push -u origin master
       <div class="info">
         
         
-    <span class="separator"><a class="tag" href="/tags/hugo/">Hugo</a><a class="tag" href="/tags/hugo-themes/">Hugo Themes</a><a class="tag" href="/tags/homebrew/">Homebrew</a><a class="tag" href="/tags/github/">GitHub</a></span>
+    <span class="separator"><a class="tag" href="/tags/hugo/">Hugo</a><a class="tag" href="/tags/hugo-themes/">Hugo Themes</a><a class="tag" href="/tags/homebrew/">Homebrew</a><a class="tag" href="/tags/git-remote/">git remote</a><a class="tag" href="/tags/github-pages/">GitHub Pages</a></span>
 
       </div>
     </div>
