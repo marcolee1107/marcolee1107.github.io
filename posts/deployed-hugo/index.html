@@ -2,7 +2,7 @@
 <html lang="tw" data-theme=""><head>
     <title> Marco Lee | 我把 Hugo 部署在 GitHub 上當作部落格網站 </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.69.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="記錄一種業餘和隨性的興緻，也像是一項項的挑戰">
+    <meta name="description" content="漫步在業餘和隨性的興緻，也像是一項項的挑戰">
     
     <link rel="stylesheet" href="https://marcolee1107.github.io/css/style.min.81d388e8ead0253555665d6f2ee28c0418753bada8054c0cfb724c4b5ead2319.css" integrity="sha256-gdOI6OrQJTVVZl1vLuKMBBh1O62oBUwM&#43;3JMS16tIxk=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
@@ -23,10 +23,10 @@
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
       <div class="title">
-        <img src="https://marcolee1107.github.io/images/profile.jpg" alt="profile picture">
+        <img src="https://marcolee1107.github.io/images/profile3.png" alt="profile picture">
         <h3 title=""><a href="/">I&#39;m Marco Lee</a></h3>
         <div class="description">
-          <p>記錄一種業餘和隨性的興緻，也像是一項項的挑戰</p>
+          <p>漫步在業餘和隨性的興緻，也像是一項項的挑戰</p>
         </div>
       </div>
     </div>
@@ -104,7 +104,8 @@
         
         </div>
 
-    <p>我想要重新開張個人部落格，選擇了 Hugo。最大的原因是它可以直接架在 GitHub 上，而且輕盈簡潔，號稱 <code>&quot;The world’s fastest framework for building websites&quot;</code>。不像 Wordpress，還得為它找一個虛擬主機；儘管我使用多年並比較熟悉 Wordpress，還是決定試試 Hugo。其背後隠藏的原因是&hellip; 我是 GitHub 使用者，GitHub Pages 和 Hugo 都免費。哈哈。</p>
+    <p><em>Marco Lee</em> - 2020.08.15</p>
+<p>我想要重新開張個人部落格，選擇了 Hugo。最大的原因是它可以直接架在 GitHub 上，而且輕盈簡潔，號稱 <code>&quot;The world’s fastest framework for building websites&quot;</code>。不像 Wordpress，還得為它找一個虛擬主機；儘管我使用多年並比較熟悉 Wordpress，還是決定試試 Hugo。其背後隠藏的原因是&hellip; 我是 GitHub 使用者，GitHub Pages 和 Hugo 都免費。哈哈。</p>
 <p>我使用 MacOS。部署 Hugo 到 GitHub 分為兩個部份，我處理的過程如下：</p>
 <h3 id="一本地建立檔案">一、本地建立檔案</h3>
 <h4 id="1-安裝-homebrew">1. 安裝 Homebrew</h4>
@@ -187,6 +188,7 @@ theme = &quot;anatole&quot;
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ hugo
 </code></pre></div><h4 id="3-將-hugo-發佈到-github-上">3. 將 Hugo 發佈到 GitHub 上</h4>
 <p>此步驟是將 public 資料夾的內容發佈到 GitHub 上的 your-account.github.io 儲存庫。在操作之前先複習 git 指令：</p>
+<blockquote>
 <ul>
 <li><strong><code>git clone &lt;網址&gt;</code></strong>。下載遠端儲存庫；如下載佈景主題儲存庫。</li>
 <li><strong><code>git init</code></strong>。新建本地儲存庫。</li>
@@ -195,6 +197,7 @@ theme = &quot;anatole&quot;
 <li><strong><code>git commit -m &quot;版本標註&quot;</code></strong>。提交版本。</li>
 <li><strong><code>git push &lt;儲存庫簡稱&gt; &lt;分支名稱&gt;</code></strong>。更新遠端儲存庫資料。</li>
 </ul>
+</blockquote>
 <p>操作時注意資料夾的切換。進入 public 資料夾，執行建立本地儲存庫：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cd public
 $ git init

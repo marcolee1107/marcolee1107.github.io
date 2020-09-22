@@ -12,12 +12,23 @@
     
     
     <item>
+      <title>創業投資(VC)與私募股權基金(PE)</title>
+      <link>https://marcolee1107.github.io/posts/pe-vc/</link>
+      <pubDate>Tue, 22 Sep 2020 10:13:41 +0800</pubDate>
+      
+      <guid>https://marcolee1107.github.io/posts/pe-vc/</guid>
+      <description>Marco Lee - 2020.09.22
+Private Equity Fund 私募股權基金；簡稱私募，有時也簡稱 PE (Private Equity；私募股權)，用來指私募基金公司，俗稱金主爸爸。私募基金在不同時期投資私有公司 (尚未上市的公司)，低買高賣。</description>
+    </item>
+    
+    <item>
       <title>我把 Hugo 部署在 GitHub 上當作部落格網站</title>
       <link>https://marcolee1107.github.io/posts/deployed-hugo/</link>
       <pubDate>Sat, 15 Aug 2020 15:46:23 +0800</pubDate>
       
       <guid>https://marcolee1107.github.io/posts/deployed-hugo/</guid>
-      <description>我想要重新開張個人部落格，選擇了 Hugo。最大的原因是它可以直接架在 GitHub 上，而且輕盈簡潔，號稱 &amp;quot;The world’s fastest framework for building websites&amp;quot;。不像 Wordpress，還得為它找一個虛擬主機；儘管我使用多年並比較熟悉 Wordpress，還是決定試試 Hugo。其背後隠藏的原因是&amp;hellip; 我是 GitHub 使用者，GitHub Pages 和 Hugo 都免費。哈哈。</description>
+      <description>Marco Lee - 2020.08.15
+我想要重新開張個人部落格，選擇了 Hugo。最大的原因是它可以直接架在 GitHub 上，而且輕盈簡潔，號稱 &amp;quot;The world’s fastest framework for building websites&amp;quot;。不像 Wordpress，還得為它找一個虛擬主機；儘管我使用多年並比較熟悉 Wordpress，還是決定試試 Hugo。其背後隠藏的原因是&amp;hellip; 我是 GitHub 使用者，GitHub Pages 和 Hugo 都免費。哈哈。</description>
     </item>
     
     <item>
